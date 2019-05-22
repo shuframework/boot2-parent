@@ -40,6 +40,7 @@
         <logback.version>1.2.3</logback.version>
         <freemarker.version>2.3.28</freemarker.version>
         <velocity.version>1.7</velocity.version>
+        <velocity2.version>2.1</velocity2.version>
         <caffeine.version>2.6.2</caffeine.version>
         <!--springboot2.0.8的依赖包版本(结束)-->
 
@@ -57,6 +58,7 @@
 		<qiniu.version>7.2.18</qiniu.version>
 		<fastjson.version>1.2.58</fastjson.version>
 		<okhttp.version>3.14.1</okhttp.version>
+        <swagger.version>2.9.2</swagger.version>
 
         <!-- 基本不会升级版本的包 -->
 		<poi.version>3.17</poi.version>
@@ -168,6 +170,17 @@
                 <groupId>com.squareup.okhttp3</groupId>
                 <artifactId>okhttp</artifactId>
                 <version>${okhttp.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>${swagger.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger-ui</artifactId>
+                <version>${swagger.version}</version>
             </dependency>
 
             <dependency>
@@ -284,6 +297,11 @@
 			    <artifactId>velocity</artifactId>
 			    <version>${velocity.version}</version>
 			</dependency>
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity-engine-core</artifactId>
+                <version>${velocity2.version}</version>
+            </dependency>
 
 			<dependency>
 	            <groupId>com.baomidou</groupId>
